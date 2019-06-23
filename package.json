@@ -1,0 +1,28 @@
+{
+  "name": "ot",
+  "version": "1.0.0",
+  "description": "The easiest automation tool in the world.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ot": "bin/ot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finngreiter/ot.git"
+  },
+  "keywords": [
+    "automate",
+    "auto",
+    "lightweight",
+    "easy"
+  ],
+  "author": "Finn Greiter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/finngreiter/ot/issues"
+  },
+  "homepage": "https://github.com/finngreiter/ot#readme"
+}
