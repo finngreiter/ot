@@ -1,5 +1,5 @@
 const fs = require('fs')
-const exec = require('child_process').exec
+const exec = require('ez-spawn')
 
 module.exports = () => {
   let commandsRaw = fs.readFileSync('otlist.json')
@@ -10,14 +10,7 @@ module.exports = () => {
     // console.log(commands)
     stuff.forEach((x) => {
       console.log(`Running \'${x}\'.`)
-      exec(x, (err, stdout, stderr) => {
-        if(stdout !== null) {
-          console.log(stdout)
-        }
-        if(stderr !== null) {
-          console.log(stderr)
-        }
-      })
+      exec.sync(x)
     })
   }
   justDoIt(parsedJSON[cmds])

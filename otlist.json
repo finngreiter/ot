@@ -1,0 +1,3 @@
+{
+  "gitThing": ["git add .", "git commit -am \"gitThingAutomationCommit\"", "git push"]
+}
