@@ -10,7 +10,7 @@ module.exports = () => {
     // console.log(commands)
     stuff.forEach((x) => {
       console.log(`Running \'${x}\'.`)
-      exec.sync(x)
+      exec.sync(x, (z) => console.log(z))
     })
   }
   justDoIt(parsedJSON[cmds])
