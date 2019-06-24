@@ -1,6 +1,18 @@
 # ot
 Automate everything!
 ## Getting Started
-Take a look at [this projects own otlist.json](https://github.com/finngreiter/ot/blob/master/otlist.json).
-as you can see, there are two tasks, ```gitThing``` and ```sayHello```. Inside these tasks there is a list of terminal commands to execute. For example, when you run ```ot sayHello``` in the terminal, ot runs the list of commands (echo Hello and echo World) one by one.
-Simple as that!
+Run ```npm i -g ot``` in your terminal to install ot.
+In your project, create a file called ```otlist.json```, this is where all of your automation tasks will live.
+
+Example ```otlist.json```
+
+```json
+{
+  "compile": ["tsc index.ts", "tsc ./files/tests.ts"],
+  "publish": ["git add .", "git commit", "git push"]
+}
+```
+
+Now, if you run ```ot compile``` it runs ```tsc index.ts``` and ```tsc ./files/tests/ts```. Same for ```publish```
+
+You can create as many tasks as you want.

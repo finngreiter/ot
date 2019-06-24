@@ -1,6 +1,6 @@
 {
   "name": "ot",
-  "version": "1.0.2",
+  "version": "1.2.0",
   "description": "The easiest automation tool in the world.",
   "main": "index.js",
   "scripts": {

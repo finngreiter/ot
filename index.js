@@ -13,5 +13,10 @@ module.exports = () => {
       let playFunction = shell.exec(x)
     })
   }
-  justDoIt(parsedJSON[cmds])
+
+  if(!(cmds in parsedJSON)){
+    console.log(`Task '${cmds}' does not exist.`)
+  } else {
+      justDoIt(parsedJSON[cmds])
+  }
 }
