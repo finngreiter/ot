@@ -1,5 +1,5 @@
 const fs = require('fs')
-const exec = require('ez-spawn')
+const shell = require('shelljs')
 
 module.exports = () => {
   let commandsRaw = fs.readFileSync('otlist.json')
@@ -9,8 +9,8 @@ module.exports = () => {
   function justDoIt(stuff) {
     // console.log(commands)
     stuff.forEach((x) => {
-      console.log(`Running \'${x}\'.`)
-      exec.sync(x)
+      console.log(`Running \'${x}\':`)
+      let playFunction = shell.exec(x)
     })
   }
   justDoIt(parsedJSON[cmds])

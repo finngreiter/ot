@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/finngreiter/ot#readme",
   "dependencies": {
-    "ez-spawn": "^2.1.3"
+    "shelljs": "^0.8.3"
   }
 }
